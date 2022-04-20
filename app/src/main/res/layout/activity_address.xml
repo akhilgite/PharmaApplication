@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddressActivity"
+    android:orientation="vertical"
+    android:layout_margin="16dp">
+    <EditText
+        android:id="@+id/editAddressName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter address name"/>
+    <EditText
+        android:id="@+id/editNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter mobile number"/>
+    <EditText
+        android:id="@+id/editPincode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter pincode"/>
+    <EditText
+        android:id="@+id/editAddress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:inputType="textMultiLine"
+        android:layout_weight="1"
+        android:hint="Enter address"
+        android:gravity="top|start"
+        android:background="@android:color/transparent"
+        android:padding="5dp"/>
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"/>
+</LinearLayout>

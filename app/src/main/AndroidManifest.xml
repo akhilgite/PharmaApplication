@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.batcodes.pharmaapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="E Medicine"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PharmaApplication">
+        <activity android:name=".SearchProductActivity"></activity>
+        <activity android:name=".AdminOrderListActivity" />
+        <activity android:name=".AdminLoginActivity" />
+        <activity android:name=".EditProductActivity" />
+        <activity android:name=".PrescriptionActivity" />
+        <activity android:name=".OrderedProductDetailsActivity" />
+        <activity
+            android:name=".PaymentActivity"
+            android:label="Payment" />
+        <activity
+            android:name=".OrderConfirmation"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".OrderSummeryActivity" />
+        <activity
+            android:name=".AddressListActivity"
+            android:label="Select Address" />
+        <activity
+            android:name=".AddressActivity"
+            android:label="Add Address" />
+        <activity
+            android:name=".CartActivity"
+            android:label="Cart" />
+        <activity
+            android:name=".AllProductsListActivity"
+            android:label="Add Products" />
+        <activity
+            android:name=".DashboardActivity"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/Theme.PharmaApplication.NoActionBar" />
+        <activity android:name=".VendorDashboard" />
+        <activity android:name=".CategoryList" />
+        <activity android:name=".AddCategory" />
+        <activity android:name=".ProductList" />
+        <activity android:name=".AddProduct" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Register" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="E Medicine ">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

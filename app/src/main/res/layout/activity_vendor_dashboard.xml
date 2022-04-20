@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VendorDashboard"
+    android:orientation="vertical">
+
+
+   <TextView
+       android:id="@+id/tvProduct"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:background="@color/purple_200"
+       android:layout_margin="16dp"
+       android:text="Product"
+       android:textSize="30sp"
+       android:gravity="center"
+       android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/teal_200"
+        android:layout_margin="16dp"
+        android:text="Category"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvOrders"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="16dp"
+        android:text="Orders"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:background="@color/brown"
+        android:textColor="@color/white"/>
+</LinearLayout>

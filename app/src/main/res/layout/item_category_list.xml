@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginBottom="14dp">
+
+    <ImageView
+        android:id="@+id/imageViewIcon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/placeholder"
+        android:background="#11000000"/>
+    <TextView
+        android:id="@+id/textViewCategoryName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="Category Name"
+        android:gravity="center"
+        android:layout_below="@id/imageViewIcon"
+        android:background="#11000000"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageViewIcon">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivEdit"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:src="@drawable/ic_edit"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#11000000"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:src="@drawable/ic_delete"
+            android:background="#11000000"
+            android:padding="3dp"/>
+    </LinearLayout>
+</RelativeLayout>

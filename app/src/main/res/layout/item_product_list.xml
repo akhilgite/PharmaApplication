@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="16dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/imageViewIcon"
+        android:layout_width="87dp"
+        android:layout_height="87dp"
+        android:src="@drawable/placeholder" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textViewProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Probiotic Duo"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/textViewProductDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="90 Gummies"
+            android:layout_marginTop="3dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/textViewProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rs 125/-"
+            android:layout_marginTop="3dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_green_light"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivEdit"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:src="@drawable/ic_edit"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#11000000"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:src="@drawable/ic_delete"
+            android:background="#11000000"
+            android:padding="3dp"
+            android:layout_weight="1"/>
+
+        <!--<Button
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_marginRight="8dp"/>
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_marginLeft="8dp"/>-->
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>
